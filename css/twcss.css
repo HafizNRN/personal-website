@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  user-select: none;
+}
+
+.nav_toggle.active span:first-child {
+  width: 51%;
+  transform-origin: top right;
+  transform: rotate(-45deg) translateY(-10px);
+}
+.nav_toggle.active span:nth-child(2) {
+  opacity: 0;
+  display: none;
+}
+.nav_toggle.active span:last-child {
+  width: 51%;
+  transform-origin: bottom right;
+  transform: rotate(45deg) translateY(10px);
+}
